@@ -8,8 +8,8 @@ function EmployeeList({ employees }) {
       <thead>
         <tr>
           <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
         </tr>
       </thead>
       <tbody>

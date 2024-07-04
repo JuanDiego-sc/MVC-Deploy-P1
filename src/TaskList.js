@@ -8,10 +8,10 @@ const TaskList = ({ tasks }) => {
       <thead>
         <tr>
           <th>#</th>
-          <th>Task Description</th>
-          <th>Start Date</th>
-          <th>Estimated Time (days)</th>
-          <th>Status</th>
+          <th>Descripción Tarea</th>
+          <th>Fecha Inicio</th>
+          <th>Tiempo Estimado (días)</th>
+          <th>Estado</th>
         </tr>
       </thead>
       <tbody>

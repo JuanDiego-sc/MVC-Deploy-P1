@@ -14,7 +14,7 @@ function SearchForm({ onSearch }) {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Start Date:</label>
+        <label>Fecha Inicio:</label>
         <input
           type="date"
           value={startDate}
@@ -23,7 +23,7 @@ function SearchForm({ onSearch }) {
         />
       </div>
       <div>
-        <label>End Date:</label>
+        <label>Fecha Fin:</label>
         <input
           type="date"
           value={endDate}
@@ -31,7 +31,7 @@ function SearchForm({ onSearch }) {
           required
         />
       </div>
-      <button type="submit">Search</button>
+      <button type="submit">Buscar</button>
     </form>
   );
 }

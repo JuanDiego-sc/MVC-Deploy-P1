@@ -3,17 +3,20 @@ import Table from "react-bootstrap/Table";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const OverdueTasks = ({ overdueTasks }) => {
+  const overdueTaskCount = overdueTasks.length;
+
   return (
     <div>
+      <p>Tienes {overdueTaskCount} tareas pasadas.</p>
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>Employee</th>
-            <th>Task Description</th>
-            <th>Start Date</th>
-            <th>Calculated End Date</th>
-            <th>Days Overdue</th>
-            <th>Project</th>
+            <th>Empleados</th>
+            <th>Descripción Tarea</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin Calculada</th>
+            <th>Días Pasados</th>
+            <th>Proyecto</th>
           </tr>
         </thead>
         <tbody>

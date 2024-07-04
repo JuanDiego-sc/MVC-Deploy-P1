@@ -50,26 +50,26 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MiniCore Task Manager</h1>
+      <h1>MiniCore Administrador Tareas</h1>
       <SearchForm onSearch={handleSearch} />
 
       <section>
-        <h2>Employees</h2>
+        <h2>Empleados</h2>
         <EmployeeList employees={employees} />
       </section>
 
       <section>
-        <h2>Projects</h2>
+        <h2>Proyectos</h2>
         <ProjectList projects={projects} />
       </section>
 
       <section>
-        <h2>All Tasks</h2>
+        <h2>Todas las Tareas</h2>
         <TaskList tasks={tasks} />
       </section>
 
       <section>
-        <h2>Overdue Tasks</h2>
+        <h2>Tareas Pasadas</h2>
         <OverdueTasks overdueTasks={overdueTasks} />
       </section>
     </div>

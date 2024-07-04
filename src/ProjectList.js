@@ -8,7 +8,7 @@ const ProjectList = ({ projects }) => {
       <thead>
         <tr>
           <th>#</th>
-          <th>Project Name</th>
+          <th>Nombre del Proyecto</th>
         </tr>
       </thead>
       <tbody>
