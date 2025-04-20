@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App-header">
       <h1>MiniCore Administrador Tareas</h1>
       <SearchForm onSearch={handleSearch} />
 
