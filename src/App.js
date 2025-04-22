@@ -16,19 +16,19 @@ function App() {
   useEffect(() => {
     // Fetch employees
     axios
-      .get("https://localhost:7219/api/Empleado/GetEmpleados")
+      .get("http://www.testdeploy.somee.com//api/Empleado/GetEmpleados")
       .then((response) => setEmployees(response.data))
       .catch((error) => console.error("Error fetching employees: ", error));
 
     // Fetch projects
     axios
-      .get("https://localhost:7219/api/Proyecto/GetProyectos")
+      .get("http://www.testdeploy.somee.com//api/Proyecto/GetProyectos")
       .then((response) => setProjects(response.data))
       .catch((error) => console.error("Error fetching projects: ", error));
 
     // Fetch tasks
     axios
-      .get("https://localhost:7219/api/Tarea/GetTareas")
+      .get("http://www.testdeploy.somee.com//api/Tarea/GetTareas")
       .then((response) => setTasks(response.data))
       .catch((error) =>
         console.error("Error fetching tasks: ", error + "+++++++++++")
@@ -38,7 +38,7 @@ function App() {
   const handleSearch = (startDate, endDate) => {
     // Fetch overdue tasks
     axios
-      .get("https://localhost:7219/api/Tasks/overdue", {
+      .get("http://www.testdeploy.somee.com//api/Tasks/overdue", {
         params: {
           startDate: startDate.toISOString().split("T")[0],
           endDate: endDate.toISOString().split("T")[0],
